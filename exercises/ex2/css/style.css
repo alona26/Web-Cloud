@@ -103,6 +103,7 @@ main img{
     border-radius: 8px;
 }
 .description {
+    display: block;
     border-radius: 8px;
     text-align: center;
     font-size: 14px;
