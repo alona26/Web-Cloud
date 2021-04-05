@@ -15,6 +15,7 @@ header{
     background-color:lightgoldenrodyellow;
     height: 190px;
     justify-content: center;
+    align-items: center;
 }
 nav, header, footer{
     width:100%;
