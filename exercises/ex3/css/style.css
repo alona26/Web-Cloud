@@ -29,27 +29,25 @@ header a{
 }
 nav{    
     background-color: palegoldenrod;
-}
-#nav1{
     display: flex;
     align-items: center; 
     height: 60px;
 }
-#nav1 ul{
+.ul1{
     display: flex;
     margin: 0 auto;
     width: 1000px;
-    
 }
-#nav1 ul li {
+ul li {
     display: block;
     display: flex;
     width: 150px;
     left: 160px;
     justify-content: center;
     align-items: center;
+
 }
-#nav1 a:hover{
+nav a:hover{
     color:steelblue;
 }
 .selected:hover{
@@ -68,9 +66,9 @@ main{
     justify-content:space-between;
     height: 700px;
 }
-#wrapper1{
+.wrapper1{
     margin: 0 auto;
-    width: 1000px;
+    width: 90%;
 }
 #container1{
     display: flex;
@@ -103,6 +101,7 @@ main{
     background-color:lightyellow;
     height: 700px;
     width:240px;
+    clear: both;
 }
 #aside1 div{
     position: relative;
@@ -131,9 +130,6 @@ footer{
     align-items: center;
     width: 145px;
     height: 40px;
-}
-#nav2 a:hover{
-    color:steelblue;
 }
 #aside2{
     height: 1000px;   
@@ -168,7 +164,7 @@ footer{
     top: 47.46%;
     margin: 21px 0 0 16px;
 }
- #block3{
+#block3{
     position: relative;
     left:280px;
     bottom:432px;
@@ -204,3 +200,58 @@ footer{
     bottom: 0;
     background-color:rgb(205, 152, 231) ;
 }
+.clear {
+    clear: left;
+  }
+/* ---------------------------------------layout3 */
+.ul3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#main3{
+    display:flex;
+    width:100%;
+    height:100%;
+    margin:0px auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+#main3>div{
+    display: block;
+    height: 344px;
+    width: 344px;
+    
+}
+#main3 > div > article{
+    height: 100px;
+    width: 100px;
+    margin-left: 33.33%;
+    margin-top: 33.33%;
+    background: contain;
+    background-size: 100px 100px;
+    background-image: url(../images/plus.png);
+    background-repeat: no-repeat;
+}
+#main3 > div > section{
+    height: 45px;
+    width: 45px;
+    margin-left: 80%;
+    margin-top: 5%;
+    background: contain;
+    background-size: 44px 44px;
+    background-image: url(../images/star.png);
+    background-repeat: no-repeat;
+    
+}
+@media only screen and (max-width:670px){
+    #main3>div{
+        display: block;
+        height: 344px;
+        width: 300px;
+    }
+}
+
+ 
