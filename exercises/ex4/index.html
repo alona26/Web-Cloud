@@ -2,19 +2,96 @@
 <html>
 
 <head>
+    <title>Alona's Form</title>
+    <meta charset="UTF-8">
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Alona Rozner</title>
+
 </head>
 
 <body>
-    <h1>Join Our Members Club</h1>
-
-    <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="GET">
-
-        <label>Full name:</label>
-        <input type=”text” name="fullName">
-
-        <input type="submit">
+    <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="GET" autocomplete="on" onsubmit="return check()">
+        <header>
+            <h1>הרשמה לאח-הגדול 2022</h1>
+            <section class="stage">
+                <figure class="ball">
+                    <span class="shadow"></span>
+                    <span class="iris"></span>
+                </figure>
+            </section>
+        </header>
+        <main>
+            <br>
+            <br>
+            <label>שם פרטי:</label>
+            <input class="form-control" type="text" name="fullName" pattern="\w+\s\w+">
+            <br>
+            <label>שם משפחה:</label>
+            <input class="form-control" type="password" name="pass" pattern=".{8,16}">
+            <br>
+            <label>אימייל:</label>
+            <input class="form-control" type="email" name="mail">
+            <br>
+            <label>כתובת:</label>
+            <input class="form-control" type="url" name="website">
+            <br>
+            <label>מספר טלפון:</label>
+            <input class="form-control" type="tel" name="phone" pattern=".{9,10}">
+            <label>כמה תרצה להשתתף בעונה החדשה?</label>
+            <input class="form-control" type="number" name="coffee" min="1" max="5">
+            <br>
+            <label>כמה תרצה לזכות בפרס?</label>
+            <input type="range" value="5" name="temper" min="1" max="10" id="slider">
+            <br><br>
+            <label for="address">מה תעשה בפרס? </label>
+            <textarea class="form-control" name="text" rows="6" columns="30"></textarea>
+            <br>
+            <h6>תכונות אופי:</h6>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Reading Books">
+            <label>קנאות </label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Baking Cakes">
+            <label>רכלנות </label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Exercising">
+            <label>חפרנות</label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Watching TV">
+            <label>בלתי נסבלות </label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Watching TV">
+            <label>עצבנות </label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Watching TV">
+            <label>ילדותיות </label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Watching TV">
+            <label>משעמם </label><br>
+            <input class="form-check-input" type="checkbox" name="interests[]" value="Watching TV">
+            <label>חוסר טקט </label><br>
+            <h6>מגדר:</h6>
+            <input class="form-check-input" type="radio" name="gender" value="female">
+            <label>נקבה</label><br>
+            <input class="form-check-input" type="radio" name="gender" value="male">
+            <label>זכר</label><br>
+            <input class="form-check-input" type="radio" name="gender" value="other">
+            <label>אחר</label><br>
+            <label for="age">גיל:
+                <select class="form-select form-select-sm" name="age">
+                    <option value="">בחר</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+            </label>
+            <br><br>
+                <input class="btn btn-primary" type="submit">
+        </main>
+        <footer></footer>
     </form>
 </body>
 
