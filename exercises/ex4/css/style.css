@@ -5,13 +5,20 @@
 header,main,footer {
     display: block;
     width: 100%;
+    direction: rtl;
+    display: block;
 }
 header h1{
     display: flex;
     text-align: center;
 }
-header, main, label{
-    direction: rtl;
+ main, label{
+  text-align: center;
+}
+#wrapper{
+
+  margin: 0 auto;
+  width: 90%;
 }
 
 @keyframes move-eye-skew {
